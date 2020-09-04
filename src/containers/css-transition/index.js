@@ -1,19 +1,16 @@
-import React, { Component } from  'react'
+import React from  'react'
+import Base from './Base'
+import Appear from './Appear'
 
-class CSSTransitionDemo extends Component{
-  constructor(props) {
-    super(props)
 
-    this.state = {
-
-    };
-  }
-  render() {
-    return(
-      <div >
-        <h3 >CSSTransitionDemo</h3>
+function CSSTransitionDemo(props) {
+  return(
+    <div >
+      <div style={{ padding: '20px' }}>
+        <Base ></Base>
+        <Appear ></Appear>
       </div>
-    )
-  }
-}
+    </div>
+  )
+} 
 export default CSSTransitionDemo

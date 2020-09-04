@@ -1,0 +1,30 @@
+.my-node-appear {
+  transform: translateX(0);
+}
+.my-node-appear-active {
+  transform: translateX(100px);
+  transition: transform 200ms;
+}
+.my-node-appear-done {
+  transform: translateX(100px);
+}
+.my-node-enter {
+  transform: translateX(0);
+}
+.my-node-enter-active {
+  transform: translateX(100px);
+  transition: transform 200ms;
+}
+.my-node-enter-done {
+  transform: translateX(100px);
+}
+.my-node-exit {
+  transform: translateX(100px);;
+}
+.my-node-exit-active {
+  transform: translateX(0);
+  transition: transform 200ms;
+}
+.my-node-exit-done {
+  transform: translateX(0);
+}
