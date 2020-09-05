@@ -1,5 +1,5 @@
 import React  from  'react'
-import './index.css'
+import './index.less'
 import { CSSTransition } from 'react-transition-group';
 
 const ChildComponent =  function ({ content, style }) {

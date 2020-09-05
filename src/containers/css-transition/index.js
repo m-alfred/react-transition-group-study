@@ -1,11 +1,11 @@
 import React from  'react'
 import Base from './Base'
 import Appear from './Appear'
-
+import './index.less';
 
 function CSSTransitionDemo(props) {
   return(
-    <div >
+    <div className='the-css-transition'>
       <div style={{ padding: '20px' }}>
         <Base ></Base>
         <Appear ></Appear>
