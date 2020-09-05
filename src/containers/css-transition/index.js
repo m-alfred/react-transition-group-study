@@ -1,7 +1,6 @@
 import React from  'react'
 import Base from './Base'
 import Appear from './Appear'
-import './index.less';
 
 function CSSTransitionDemo(props) {
   return(
