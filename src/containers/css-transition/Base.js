@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import Move from '../../components/Move';
+import Move from 'src/components/Move';
 
 const duration = 1000;
 

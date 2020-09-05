@@ -2,8 +2,8 @@ import React from 'react';
 import {
   BrowserRouter, Route, Redirect, Switch,
 } from 'react-router-dom';
-import CSSTransition from '../containers/css-transition'
-import Transition from '../containers/transition'
+import CSSTransition from 'src/containers/css-transition'
+import Transition from 'src/containers/transition'
 
 const Page404 = function (props) {
   return <div >404</div>

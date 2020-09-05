@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import Fade from '../../components/Fade';
+import Fade from 'src/components/Fade';
 
 const duration = 1000;
 
