@@ -1,3 +1,18 @@
+# React Transition Group使用
+- Transition
+- CSS Transition
+- CSS 3D动画研究
+
+
+## 参考资料
+1. [React Transition Group](https://reactcommunity.org/react-transition-group/)
+2. [MDN rotateY()](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/rotateY)
+3. [MDN perspective](https://developer.mozilla.org/zh-CN/docs/Web/CSS/perspective)
+4. [MDN perspective-origin](https://developer.mozilla.org/zh-CN/docs/Web/CSS/perspective-origin)
+
+***
+**分割线：以下为create-react-app文档**
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

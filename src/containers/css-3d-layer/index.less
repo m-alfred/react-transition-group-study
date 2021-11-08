@@ -1,0 +1,55 @@
+.rotate-con {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.rotate-con--perspective {
+  perspective: 600px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: #f00;
+}
+
+.my-rotate {
+  // 正数顺时针 负数逆时针
+  transform: rotateY(-135deg);
+}
+.strike-line {
+  position: absolute;
+  display: block;
+  top: 90px;
+  left: 10px;
+  z-index: 1;
+  width: 300px;
+  height: 10px;
+  background-color: #00f;
+}
+
+.my-con {
+  position: fixed;
+  width: 100%;
+  height: 600px;
+
+  .mask {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+  }
+  .main {
+    position: absolute;
+    z-index: 101;
+    display: inline-block;
+    // background-color: #ff0;
+    width: 200px;
+    height: 300px;
+  }
+}

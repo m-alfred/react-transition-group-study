@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>购物补贴</title>
+    <meta name="flpn" content="shopapp_h5_wxcard_index" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="//l0.51fanli.net" />
+    <link rel="dns-prefetch" href="//l1.51fanli.net" />
+    <link rel="dns-prefetch" href="//l2.51fanli.net" />
+    <link rel="dns-prefetch" href="//l3.51fanli.net" />
+    <link rel="dns-prefetch" href="//l4.51fanli.net" />
+    <link rel="dns-prefetch" href="//static2.51fanli.net" />
+    <link rel="shortcut icon" href="//www.fanli.com/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="//www.fanli.com/apple-touch-icon.png" />
+    <link
+      rel="stylesheet"
+      href="//static2.51fanli.net/static/?f=webapp/css/base.css,common/libs/fmu/ui/coupon.css,common/libs/fmu/css/dialog.css,shop/h5/wxcard/css/index.css&1601432648_4161119842"
+    />
+    <script
+      id="J_script_attrsniffer"
+      data-remwidth="750"
+      data-remswitch="1"
+      src="//static2.51fanli.net/static/?f=webapp/js/common/attrsniffer.js&1601432648_4161119842"
+    ></script>
+    <script>
+      var wagv = {
+        pn: '',
+        app: 'https://m.fanli.com/',
+        channels: {
+          superfl: {},
+          shop_domain: 'http://shop.fanli.com',
+        },
+        fanlitrack: {
+          pv: { s_pos: '' },
+          sv: {
+            spagename: '',
+            from: '0',
+            keyword: '',
+            appType: '',
+            stype: 'item',
+          },
+        },
+        isFromWeixin: navigator.userAgent.toLowerCase().indexOf('micromessenger') > -1,
+        isFromFanli: navigator.userAgent.toLowerCase().indexOf('fanli') > -1,
+        isFromAlipay: navigator.userAgent.toLowerCase().indexOf('alipayclient') > -1,
+        isFromAlipayMini:
+          navigator.userAgent.toLowerCase().indexOf('alipayclient') > -1 &&
+          navigator.userAgent.toLowerCase().indexOf('miniprogram') > -1,
+        loginTemFunctionAttr: 'temfunction_' + Math.random().toString().replace(/\D/g, ''),
+        pageJsListArr: [],
+        pageJsLoadedCallbackArr: [],
+        inWeiXin: {},
+        openinstall: {
+          onready: function () {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="J_wrap" style="display: none">
+      <p class="icon"><img class="w100" src="//static2.51fanli.net/shop/h5/wxcard/images/icon.png" /></p>
+      <h3 class="title">购物奖励</h3>
+      <div class="red-box">
+        <a
+          class="btn"
+          href="https://huodong.fanli.com/pddlijin?scene_id=123&spm=page_name.h5.pty-entrance~scene-123~std-73120"
+          data-spm="page_name.h5.pty-wlhbdj~scene-123~std-75290"
+        ></a>
+        <p class="info">823568人已领取</p>
+        <img class="w100" src="//static2.51fanli.net/shop/h5/wxcard/images/red-bg.png" />
+      </div>
+      <div id="J_dialog" class="dialog" style="display: none">
+        <div class="detain-box">
+          <div class="con">
+            <a
+              class="J_close fmu-dl-close-cwhite"
+              href="javascript:void(0);"
+              data-spm="page_name.h5.pty-wlpopgb~scene-123~std-75290"
+            ></a>
+            <h3 class="detain-title">300元补贴金</h3>
+            <h4 class="detain-info">离开后您将失去领取资格</h4>
+            <div class="btn-wrap">
+              <a
+                class="J_close detain-btn"
+                href="javascript:void(0);"
+                data-spm="page_name.h5.pty-wlpoplk~scene-123~std-73622"
+                >离开</a
+              ><a
+                class="detain-btn"
+                href="https://huodong.fanli.com/pddlijin?scene_id=123&spm=page_name.h5.pty-entrance~scene-123~std-73120"
+                data-spm="page_name.h5.pty-wlpopdj~scene-123~std-73622"
+                >立即使用</a
+              >
+            </div>
+            <p class="day-info">
+              <span class="l">有效期</span><span class="r">2020-09-30 00:00- 2020-10-05 23:59</span>
+            </p>
+            <p class="day-info">
+              <span class="l">重要说明</span><span class="r">本次购物补贴可用与活动商品购买时立减使用。</span>
+            </p>
+          </div>
+          <img class="bgimg w100" src="//static2.51fanli.net/shop/h5/wxcard/images/coun.png" />
+        </div>
+      </div>
+    </div>
+    <input id="J_show_back" type="hidden" value="1" /><input id="J_back_gopdd" type="hidden" value="1" /><input
+      id="J_pdd_scene_id"
+      type="hidden"
+      value="123"
+    /><input
+      id="J_pdd_lijin_url"
+      type="hidden"
+      value="https://huodong.fanli.com/pddlijin?scene_id=123&spm=page_name.h5.pty-entrance~scene-123~std-73120"
+    /><input id="J_card_id" type="hidden" value="pP3WWw6OZrnig-zTkCzQkpw2sCvU" /><input
+      id="J_card_ext"
+      type="hidden"
+      value='{"timestamp":"1601445887","nonce_str":"76QplgK4str5f3qi","api_ticket":"IpK_1T69hDhZkLQTlwsAX33I-fBnnKUVvLCnMGrIkttAtW6Bx6TtTbYhRVTb2aHNkKtly-shPHReCezBSmxn4g","card_id":"pP3WWw6OZrnig-zTkCzQkpw2sCvU","openid":"","code":"","signature":"c98cfd6b0aff0861e47430a110c1565774fd05cd"}'
+    />
+    <script>
+      (function () {
+        var cnzz = document.createElement('script');
+        cnzz.src = 'https://s9.cnzz.com/z_stat.php?id= 1279283156&web_id= 1279283156';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(cnzz, s);
+      })();
+    </script>
+    <script>
+      var jweixinVersion = '[version]'.indexOf('ver') > -1 ? '1.0.0' : '[version]';
+      if (wagv.isFromWeixin) {
+        wagv.isSetWXShareTimeline = false;
+        wagv.isSetWXShareSession = false;
+
+        window.wxFanliConfig = {
+          debug: false,
+          // 朋友圈
+          timeline: {
+            title: document.title,
+            url: location.href,
+            img:
+              document.images.length > 0
+                ? document.images[0].src
+                : '//static2.51fanli.net/common/images/logo/logo-wx-share.alpha.png',
+          },
+          // 朋友
+          session: {
+            title: document.title,
+            desc: document.title,
+            url: location.href,
+            img:
+              document.images.length > 0
+                ? document.images[0].src
+                : '//static2.51fanli.net/common/images/logo/logo-wx-share.alpha.png',
+          },
+
+          appId: 'wx1ed0b4fd1468f895',
+          timestamp: '1601445887',
+          nonceStr: 'kjTHHCcBU6N6wVt9',
+          signature: '27e2553d0aec42f3e9a117bb14516c98fbac2c6d',
+          jsApiList: [
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareQZone',
+            'hideOptionMenu',
+            'hideMenuItems',
+            'hideAllNonBaseMenuItem',
+            'closeWindow',
+            'scanQRCode',
+            'chooseCard',
+            'addCard',
+            'openCard',
+          ],
+          openTagList: ['wx-open-launch-weapp'],
+        };
+
+        wagv.pageJsListArr.push('//res.wx.qq.com/open/js/jweixin-' + jweixinVersion + '.js');
+        wagv.pageJsListArr.push(
+          '//static2.51fanli.net/static/?f=webapp/js/common/weixin/weixinguide.js&1601432648_4161119842'
+        );
+
+        wagv.pageJsLoadedCallbackArr.push(function () {
+          var $wxTimeline = $('[data-wxtimeline]');
+          var $wxSession = $('[data-wxsession]');
+          var wxTimeline;
+          var wxSession;
+
+          var wxTimelineNeedOverrid = !wagv.isSetWXShareTimeline && $wxTimeline.length == 1;
+          var wxSessionNeedOverride = !wagv.isSetWXShareSession && $wxSession.length == 1;
+
+          if (wxTimelineNeedOverrid) {
+            wxTimeline = $wxTimeline.data('wxtimeline');
+
+            if (wxTimeline.title) {
+              wxFanliConfig.timeline.title = wxTimeline.title;
+            }
+
+            if (wxTimeline.url) {
+              wxFanliConfig.timeline.url = wxTimeline.url;
+            }
+
+            if (wxTimeline.img) {
+              wxFanliConfig.timeline.img = wxTimeline.img;
+            }
+          }
+
+          if (wxSessionNeedOverride) {
+            wxSession = $wxSession.data('wxsession');
+
+            if (wxSession.title) {
+              wxFanliConfig.session.title = wxSession.title;
+            }
+
+            if (wxSession.desc) {
+              wxFanliConfig.session.desc = wxSession.desc;
+            }
+
+            if (wxSession.url) {
+              wxFanliConfig.session.url = wxSession.url;
+            }
+
+            if (wxSession.img) {
+              wxFanliConfig.session.img = wxSession.img;
+            }
+          }
+
+          // weixin config
+          wx.config({
+            debug: wxFanliConfig.debug,
+            appId: wxFanliConfig.appId,
+            timestamp: wxFanliConfig.timestamp,
+            nonceStr: wxFanliConfig.nonceStr,
+            signature: wxFanliConfig.signature,
+            jsApiList: wxFanliConfig.jsApiList,
+            openTagList: wxFanliConfig.openTagList,
+          });
+
+          wx.ready(function () {
+            // 分享给朋友
+            wx.onMenuShareAppMessage({
+              title: wxFanliConfig.session.title,
+              desc: wxFanliConfig.session.desc,
+              link: wxFanliConfig.session.url,
+              imgUrl: wxFanliConfig.session.img,
+              trigger: function (res) {
+                //alert('用户点击发送给朋友');
+              },
+              success: function (res) {
+                if (wagv.inWeiXin && typeof wagv.inWeiXin['shareAppSuccess'] == 'function') {
+                  wagv.inWeiXin['shareAppSuccess']();
+                }
+              },
+              cancel: function (res) {
+                //alert('已取消');
+              },
+              fail: function (res) {
+                alert('分享失败');
+              },
+            });
+
+            // 分享到朋友圈
+            wx.onMenuShareTimeline({
+              title: wxFanliConfig.timeline.title,
+              link: wxFanliConfig.timeline.url,
+              imgUrl: wxFanliConfig.timeline.img,
+              trigger: function (res) {
+                //alert('用户点击分享到朋友圈');
+              },
+              success: function (res) {
+                if (wagv.inWeiXin && typeof wagv.inWeiXin['shareTimelineSuccess'] == 'function') {
+                  wagv.inWeiXin['shareTimelineSuccess']();
+                }
+              },
+              cancel: function (res) {
+                //alert('已取消');
+              },
+              fail: function (res) {
+                //alert(JSON.stringify(res));
+                alert('分享失败');
+              },
+            });
+          });
+
+          wx.error(function (res) {
+            // config信息验证失败会执行error函数，如签名过期导致验证失败，
+            // 具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+          });
+        });
+      }
+    </script>
+    <script src="//static2.51fanli.net/common/libs/headjs/head.load.min.js?v=1"></script>
+    <script>
+      (function () {
+        wagv.pageJsListArr.push('//static2.51fanli.net/common/libs/fmu/js/vendors/jquery/jquery.min.js');
+
+        if (wagv.isFromFanli) {
+          wagv.pageJsListArr.push('//static2.51fanli.net/static/webapp-fanli-bridge-js.js?1601432648_4161119842');
+        }
+
+        if (wagv.isFromAlipay) {
+          wagv.pageJsListArr.push('//appx/web-view.min.js');
+        }
+
+        wagv.pageJsListArr.push(
+          '//static2.51fanli.net/static/?f=webapp/js/base.js,common/js/fanli/trace/ubt.js,shop/h5/wxcard/js/index.js&1601432648_4161119842'
+        );
+        setTimeout(function () {
+          head.load(wagv.pageJsListArr, function () {
+            for (var i = 0, len = wagv.pageJsLoadedCallbackArr.length; i < len; ++i) {
+              wagv.pageJsLoadedCallbackArr[i]();
+            }
+          });
+        }, 10);
+      })();
+    </script>
+  </body>
+</html>

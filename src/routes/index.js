@@ -4,6 +4,10 @@ import {
 } from 'react-router-dom';
 import CSSTransition from 'src/containers/css-transition'
 import Transition from 'src/containers/transition'
+import CSS3d from 'src/containers/css-3d'
+import CSS3dLayer from 'src/containers/css-3d-layer'
+import Amazing from 'src/containers/amazing'
+
 
 const Page404 = function (props) {
   return <div >404</div>
@@ -19,6 +23,21 @@ const routes = [
     path: '/css-transition',
     exact: true,
     component: CSSTransition,
+  },
+  {
+    path: '/css-3d',
+    exact: true,
+    component: CSS3d,
+  },
+  {
+    path: '/css-3d-layer',
+    exact: true,
+    component: CSS3dLayer,
+  },
+  {
+    path: '/amazing',
+    exact: true,
+    component: Amazing,
   },
   {
     path: '*',
