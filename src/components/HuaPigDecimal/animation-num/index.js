@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import './index.less';
 
-class ProgressiveNum extends Component {
+class AnimationNum extends Component {
   constructor(props) {
     super(props);
 
@@ -62,8 +62,8 @@ class ProgressiveNum extends Component {
   }
 }
 
-ProgressiveNum.defaultProps = {
+AnimationNum.defaultProps = {
   list: [],
   time: 600,
 };
-export default ProgressiveNum;
+export default AnimationNum;

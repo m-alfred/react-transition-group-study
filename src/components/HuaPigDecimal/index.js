@@ -1,7 +1,7 @@
 import React, { Component } from  'react'
 
 import { createAnimCell, padding} from './util'
-import ProgressiveNum from './progressive-num-copy';
+import ProgressiveNum from './animation-num';
 
 
 class HuaPigNumber extends Component{

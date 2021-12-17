@@ -1,5 +1,5 @@
 import React, { Component } from  'react'
-import HuaPigNumber from 'src/components/HuaPigNumber'
+import HuaPigDecimal from 'src/components/HuaPigDecimal'
 
 class AmazingAnimation extends Component{
   constructor(props) {
@@ -12,7 +12,7 @@ class AmazingAnimation extends Component{
   render() {
     return(
       <div >
-        <HuaPigNumber ></HuaPigNumber>
+        <HuaPigDecimal ></HuaPigDecimal>
       </div>
     )
   }

@@ -7,6 +7,7 @@ import Transition from 'src/containers/transition'
 import CSS3d from 'src/containers/css-3d'
 import CSS3dLayer from 'src/containers/css-3d-layer'
 import Amazing from 'src/containers/amazing'
+import HuaPigNumber from 'src/containers/hua-pig-num'
 
 
 const Page404 = function (props) {
@@ -38,6 +39,11 @@ const routes = [
     path: '/amazing',
     exact: true,
     component: Amazing,
+  },
+  {
+    path: '/hua-pig-num',
+    exact: true,
+    component: HuaPigNumber,
   },
   {
     path: '*',
